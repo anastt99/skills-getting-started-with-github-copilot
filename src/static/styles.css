@@ -142,3 +142,61 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styles */
+.activity-card .participants {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(246,249,255,0.98));
+  border-radius: 8px;
+  border: 1px solid rgba(26,35,126,0.06);
+}
+.activity-card .participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #1a237e;
+}
+.activity-card .participants ul {
+  margin: 0;
+  padding-left: 0;
+  max-height: 6rem;
+  overflow: auto;
+  list-style: none;
+}
+.activity-card .participants li {
+  font-size: 0.92rem;
+  color: #333;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 4px;
+}
+.activity-card .participants .participant-email {
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+.activity-card .participants .participant-delete {
+  flex: 0 0 auto;
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #f5c6cb;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 0;
+}
+.activity-card .participants .participant-delete:hover {
+  background: #ffcdd2;
+}
+.activity-card .participants ul.no-participants li {
+  font-style: italic;
+  color: #777;
+  list-style-type: none;
+}
